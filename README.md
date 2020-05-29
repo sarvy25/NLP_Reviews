@@ -1,7 +1,7 @@
 <p align="center"><b>Sarvenaz Memarzadeh</b></p>
 <p align="center">sarvenaz.me@gmail.com</p>
 
-# Hotel Reviews Analysis Using Natural Lanuage Processing
+# Hotel Reviews Analysis Using Natural Language Processing
 
 ## Table of Contents
 1. [Problem](README.md#problem)
