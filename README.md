@@ -28,8 +28,11 @@ A function called ```return_reviews``` is implemented which gets the hotel name 
 Sentiment analysis is performed in the hotel_sentiment which gets the csv file in a data frame format, state name, hotel name, model,and reviews. Each review is converted into its feature matrix using the CountVectorizer function from the nltk library. 
 
 ## User interface
-<p align="center>
-<img src="https://github.com/sarvy25/NLP_Reviews/blob/master/github_images/Screen%20Shot%202020-05-28%20at%209.00.16%20PM.png" />
+<p align="center">
+<img src="https://github.com/sarvy25/NLP_Reviews/raw/master/github_images/main_search.png" />
 </p>
 
 
+<p align="center">
+<img src="https://github.com/sarvy25/NLP_Reviews/raw/master/github_images/review_samples.png" />
+</p>
