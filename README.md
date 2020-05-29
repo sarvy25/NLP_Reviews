@@ -1,7 +1,7 @@
 <p align="center"><b>Sarvenaz Memarzadeh</b></p>
 <p align="center">sarvenaz.me@gmail.com</p>
 
-# Hotel Reviews Analysis Using Natural Lanuage Processing
+# Hotel Reviews Analysis Using Natural Language Processing
 
 ## Table of Contents
 1. [Problem](README.md#problem)
@@ -12,7 +12,7 @@
 ## Problem
 How does customer review impact on your business? 
 
-**The goal is to analyze cutomer reviews of hotels and classify their comments into positive, neutral and negative using natural language processing.**
+**The goal is to analyze cutomer reviews of hotels and classify their comments into positive, neutral and negative using machine learning and natural language processing.**
 
 ## Dataset
 The dataset contains the hotel reviews are from the Kaggle website which you can find it <a href="https://www.kaggle.com/datafiniti/hotel-reviews">here</a>. The rest of the data are collected by web scrapping using the hotelsComScraper.py file. 
@@ -25,9 +25,10 @@ bed type and price in a meta dictionary.
 The app is implemented in Python. It is compatible with Python3. 
 
 A function called ```return_reviews``` is implemented which gets the hotel name as the input and returns its reviews by classifying them into positive, negative and neutral. It also returns the ```Sarvy's star``` which is computed by taking the average over the predicted values. 
-Sentiment analysis is performed in the hotel_sentiment which gets the csv file in a data frame format, state name, hotel name, model,and reviews. Each review is converted into its feature matrix using the CountVectorizer function from the nltk library. 
+Sentiment analysis is performed in the hotel_sentiment which gets the csv file in a data frame format, state name, hotel name, model,and reviews. Each review is converted into its feature matrix using the CountVectorizer in nltk library. 
 
 ## User interface
+The main website's template is adopted from <a href="https://colorlib.com/wp/templates/">colorlib</a> webpage. It is modified according to the user's given input by placing a search box which enables user to search for the hotel's name.  App.py file renders the template according to a certain given hotel's name and once the request is posted it calls the hotel's webpage (hote_page.html) by extracting the images, reviews, price,and the computed star (from the sentiment analysis) from the hotels meta dataset. There is also an autocomplete feature which helps user to post the name faster.  
 <p align="center">
 <img src="https://github.com/sarvy25/NLP_Reviews/raw/master/github_images/main_search.png" />
 </p>
