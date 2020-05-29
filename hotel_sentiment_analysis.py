@@ -15,7 +15,7 @@ def return_reviews(hotel_name):
     df_state = df[df['province'] == state_name]
     # classify rating in to three classes
     y = df_state['reviews.rating']
-    y = y.mask(df_state['reviews.rating'] < 3 , 1) # mask is a function
+    y = y.mask(df_state['reviews.rating'] < 3 , 1) 
     y = y.mask(df_state['reviews.rating'] == 3 , 3)
     y = y.mask(df_state['reviews.rating'] > 3 , 5)
 
@@ -52,12 +52,7 @@ def return_reviews(hotel_name):
                 neutral_reviews.append(review)
             else:
                 negative_reviews.append(review)
-#        total_reviews = len(neutral_reviews) + len(positive_reviews) + len(negative_reviews)
-#         print('pos:', positive_reviews)
-#         print('neg:', negative_reviews)
-#         print('neut:', neutral_reviews)
 
-        #star = (5*len(positive_reviews)+3*len(neutral_reviews)+1*len(negative_reviews))/total_reviews
         return positive_reviews, negative_reviews, neutral_reviews, star
     
     return hotel_sentiment(df, state_name, hotel_name, model, cv)
