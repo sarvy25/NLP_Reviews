@@ -29,7 +29,7 @@ Sentiment analysis is performed in the hotel_sentiment which gets the csv file i
 
 ## User interface
 <p align="center>
-<img src="https://github.com/sarvy25/NLP_Reviews/blob/master/github_images/Screen%20Shot%202020-05-28%20at%209.00.16%20PM.png" />
+<img src="https://github.com/sarvy25/NLP_Reviews/raw/master/github_images/main_search.png" />
 </p>
 
 
