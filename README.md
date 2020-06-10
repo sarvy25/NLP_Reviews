@@ -24,11 +24,11 @@ bed type and price in a meta dictionary.
 ## Approach
 The app is implemented in Python. It is compatible with Python3. 
 
-A function called ```return_reviews``` is implemented which gets the hotel name as the input and returns its reviews by classifying them into positive, negative and neutral. It also returns the ```Sarvy's star``` which is computed by taking the average over the predicted values. 
-Sentiment analysis is performed in the hotel_sentiment which gets the csv file in a data frame format, state name, hotel name, model,and reviews. Each review is converted into its feature matrix using the CountVectorizer in nltk library. 
+A function called ```return_reviews``` is implemented which by using the hotel name returns the reviews and classifies them into positive, negative and neutral. It also returns the ```Sarvy's star``` which is computed according to the average of the predicted stars. 
+Sentiment analysis is performed in the ```hotel_sentiment``` using the csv file in a data frame format, state name, hotel name, model,and reviews. Each review is then converted into its feature matrix using the CountVectorizer in nltk library. 
 
 ## User interface
-The main website's template is adopted from <a href="https://colorlib.com/wp/templates/">colorlib</a> webpage. It is modified according to the user's given input by placing a search box which enables user to search for the hotel's name.  App.py file renders the template according to a certain given hotel's name and once the request is posted it calls the hotel's webpage (hote_page.html) by extracting the images, reviews, price,and the computed star (from the sentiment analysis) from the hotels meta dataset. There is also an autocomplete feature which helps user to post the name faster.  
+The main website's template is adopted from <a href="https://colorlib.com/wp/templates/">colorlib</a> webpage. It is modified according to the user's given input by placing a search box which enables the user to search for the hotel's name.  App.py file renders the template according to a certain given hotel's name and once the request is posted it calls the hotel's webpage (hote_page.html) by extracting the images, reviews, price,and the computed star (from the sentiment analysis) from the hotels meta dataset. There is also an autocomplete feature which helps the user to post the name faster.  
 <p align="center">
 <img src="https://github.com/sarvy25/NLP_Reviews/raw/master/github_images/main_search.png" />
 </p>
