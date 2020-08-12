@@ -15,7 +15,7 @@ How does customer review impact on your business?
 **The goal is to analyze cutomer reviews of hotels and classify their comments into positive, neutral and negative using machine learning and natural language processing.**
 
 ## Dataset
-The dataset contains the hotel reviews are from the Kaggle website which you can find it <a href="https://www.kaggle.com/datafiniti/hotel-reviews">here</a>. The rest of the data are collected by web scrapping using the hotelsComScraper.py file. 
+The dataset contains the hotel reviews are from the Kaggle website which you can find it <a href="https://www.kaggle.com/datafiniti/hotel-reviews">here</a>. The rest of the data are collected by web scraping using the hotelsComScraper.py file. 
 This file contains a function called ```save_hotel_info``` which uses beautifulsoup to parse the webpage contents. It goes over each number of hotels get the input of
 ```hotel_name```, ```address_template```, ```check_in```, ```check_out```, ```root_save_folder```, ```sleep_between_queries=0```, ```max_images_per_hotel=5``` and save the hotel information including the images, description of hotels, main amenities, family features, whats around, room name,
 bed type and price in a meta dictionary. 
